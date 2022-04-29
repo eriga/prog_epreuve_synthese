@@ -4,8 +4,7 @@ session_start();
 if (
     isset($_GET["reponse2"]) == true &&
     empty($_GET["reponse2"]) == false &&
-    $_GET["reponse2"] >= 100 &&
-    $_GET["reponse2"] <= 200
+    is_numeric($_GET["reponse2"])
 ) {
     // PSEUDO
     // 1. Placer le paramètre dans la session
